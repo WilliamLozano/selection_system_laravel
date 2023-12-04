@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hoja de vida</title>
+    <link rel="stylesheet" href="/Candidato/Css/hoja-vida.css">
+    <script src="https://kit.fontawesome.com/10d9a6ff24.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main class="page">
+
+            <header class="header">
+
+                <section class="contenedor-logo">
+                    <span>S</span><span class="s-amarilla">S</span>
+                </section>
+
+                <section class="titulo">
+                    <span>Selection</span><section class="system">System</section>
+                </section>
+
+            </header>
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------->
+
+            <section class="contenedor-content">
+                <form class="contenedor-hoja-vida" method="get" action="/Candidato/Html/pantalla-inicio.html">
+
+                    <section class="primera-linea">
+
+                        <article class="datos-identificacion">
+
+                            <article class="contenedor-titulo">
+                                <h2 class="titulo">Datos Identificacion</h2>
+                            </article>
+
+                            <article class="contenedor-tipo-identificacion">
+                                <h4 class="titulo">Tipo de identificacion</h4>
+                                <select class="menu-identificacion" name="identificacion">
+                                    <option value="cedula de ciudadania">Cedula de ciudadania</option>
+                                    <option value="Tarjeta de identidad">Tarjeta de identidad</option>
+                                    <option value="cedula de extranjeria">Cedula de extranjeria</option>
+                                    <option value="cedula de extranjeria">Cedula de extranjeria</option>
+                                    <option value="Otro documento de identidad">Otro doumento de identidad</option>
+                                    <option value="Otro documento de identidad">Otro doumento de identidad</option>
+                                    <option value="Permiso especial de permanencia">Permiso especial de permanencia</option>
+                                    <option value="Permiso especial de permanencia">Permiso especial de permanencia</option>
+                                    <option value="Permiso por proteccion temporal">Permiso por proteccion temporal</option>
+                                </select>
+                            </article>
+
+                            <article class="contenedor-numero-identificacion">
+                                <h4 class="titulo">Numero de identificacion</h4>
+                                <input class="num-identificacion" type="number" value="number"  min="0" required/>
+                            </article>
+
+                            <article class="contenedor-fecha-nac">
+                                <h4 class="titulo">Fecha de nacimiento</h4>
+                                <input class="fecha-nacimiento" type="date" value="date" required/>
+                            </article>
+
+                        </article>
+
+
+                        <article class="lugar-nacimiento">
+                            <article class="contenedor-titulo">
+                                <h2 class="titulo">Lugar de nacimiento</h2>
+                            </article>
+
+                            <article class="contenedor-pais">
+                                <h4 class="titulo">Pais</h4>
+                                <input class="pais" type="text" value="Colombia"/>
+                            </article>
+
+                            <article class="contenedor-departamento">
+                                <h4 class="titulo">Departamento</h4>
+                                <select class="munu-departamentos" name="departamentos">
+                                    <option value="cundinamarca">Cundinamarca</option>
+                                    <option value="cundinamarca">Cundinamarca</option>
+                                    <option value="cundinamarca">Cundinamarca</option>
+                                    <option value="cundinamarca">Cundinamarca</option>
+                                    <option value="cundinamarca">Cundinamarca</option>
+                                    <option value="cundinamarca">Cundinamarca</option>
+                                </select>
+                            </article>
+
+                            <article class="contenedor-municipio">
+                                <h4 class="titulo">Municipio</h4>
+                                <select class="munu-municipio" name="municipio">
+                                    <option value="municipio">Municipio</option>
+                                    <option value="municipio">Municipio</option>
+                                    <option value="municipio">Municipio</option>
+                                    <option value="municipio">Municipio</option>
+                                    <option value="municipio">Municipio</option>
+                                    <option value="municipio">Municipio</option>
+                                </select>
+                            </article>
+
+                        </article>
+
+                        <article class="identidad">
+
+                            <article class="contenedor-titulo">
+                                <h2 class="titulo">Identidad</h2>
+                            </article>
+
+                            <article class="contenedor-nombre">
+                                <h3 class="titulo">Nombre</h3>
+                                <input class="input" type="text" required/>
+                            </article>
+
+                            <article class="contenedor-apellido-1">
+                                <h3 class="titulo">Primer apellido</h3>
+                                <input class="input" type="text" required/>
+                            </article>
+
+                            <article class="contenedor-apellido-2">
+                                <h3 class="titulo">Segundo apellido</h3>
+                                <input class="input" type="text"/>
+                            </article>
+
+                        </article>
+
+                    </section>
+
+                    <section class="segunda-linea">
+
+                        <article class="otros-datos">
+
+                            <article class="contenedor-titulo">
+                                <h2 class="titulo">Otros datos</h2>
+                            </article>
+
+                            <article class="contenedor-direccion">
+                                <h3 class="titulo">Direccion</h3>
+                                <input class="input" type="text" required/>
+                            </article>
+
+                            <article class="contenedor-estado">
+                                <h3 class="titulo">Estado-civil</h3>
+                                <select class="menu-estado-civil" name="estado-civil">
+                                    <option value="soltero">Soltero</option>
+                                    <option value="cansado">Casado</option>
+                                    <option value="union-hecho">Union de hecho</option>
+                                    <option value="seorado">Seorado</option>
+                                    <option value="divorciado">Divorciado</option>
+                                    <option value="viudo">Viudo</option>
+                                </select>
+                            </article>
+
+                            <article class="contenedor-rol">
+                                <h3 class="titulo">Rol</h3>
+                                <select class="menu-roles" name="roles">
+                                    <option value="instructor">Instructor</option>
+                                    <option value="seleccionador">Seleccionador</option>
+                                    <option value="reclutador">Reclutador</option>
+                                    <option value="candidato">Candidato</option>
+                                </select>
+                                <!-- <h3 class="titulo">Rol</h3>
+                                <input class="input" type="text" value="Candidato"/> -->
+                            </article>
+
+                            <article class="contenedor-genero">
+                                <h3 class="titulo">Genero</h3>
+                                <select class="menu-generos" name="genero">
+                                    <option value="masculino">Masculino</option>
+                                    <option value="femenino">Femenino</option>
+                                    <option value="otro">Otro</option>
+                                </select>
+                                <!-- <h3 class="titulo">Rol</h3>
+                                <input class="input" type="text" value="Candidato"/> -->
+                            </article>
+
+                            <article class="contenedor-telefono">
+                                <h3 class="titulo">Telefono celular</h3>
+                                <input class="input" type="tel" required />
+                            </article>
+
+                            <article class="contenedor-email">
+                                <h3 class="titulo">Correo electronico</h3>
+                                <input class="input" type="email" required/>
+                            </article>
+
+                        </article>
+
+                        <article class="datos-profesionales">
+
+                            <article class="contenedor-titulo">
+                                <h2 class="titulo">Datos profesionales</h2>
+                            </article>
+
+                            <article class="contenedor-educacion">
+                                <h4 class="titulo">Educacion</h4>
+                                <input id="input" type="file"/>
+
+                                <article class="flex">
+                                    <article class="texto">
+                                        <i class="fa-solid fa-download" style="color: #000000;"></i>
+                                        <label for="input">Seleccionar archivo</label>
+                                    </article>
+
+                                    <article class="contenedor-boton">
+                                        <button class="boton">+ Mas</button>
+                                    </article>
+                                </article>
+                            </article>
+
+                            <article class="contenedor-experiencia">
+
+                                <article class="empresa">
+                                    <h1 class="titulo">Empresa</h1>
+                                    <input class="input" type="text"/>
+                                </article>
+
+                                <article class="experiencia">
+                                    <h1 class="titulo">Meses de experiencia</h1>
+                                    <input class="input" type="text"/>
+                                </article>
+
+                            </article>
+
+                            <article class="contenedor-flex">
+                                    
+                                <h1 class="titulo">Documentos experiencia empresarial</h1>
+
+                                <article class="flex-2">
+                                    <article class="texto">
+                                        <i class="fa-solid fa-download" style="color: #000000;"></i>
+                                        <label for="input">Seleccionar archivo</label>
+                                    </article>
+
+                                    <article class="contenedor-boton-2">
+                                        <button class="boton-2">+ Mas</button>
+                                    </article>
+
+                                </article>
+
+                            </article>
+
+                            <article class="perfil-ocupacional">
+                                <h3 class="titulo">Perfil ocupacional</h3>
+                                <p class="sintesis">Aqui podra redactar su hoja de vida, preferiblemente que sea del ultimo empleo o estudio especificando su experiencia su labor y el conocimiento que adquirio</p>
+                                <textarea class="textarea"></textarea>
+                            </article>
+
+                            <article class="logros-alcanzados">
+                                <h3 class="titulo">Logros alcanzadoss</h3>
+                                <p class="sintesis">De forma corta destaque los hechos mas relevantes de su vida laboral</p>
+                                <textarea class="textarea"></textarea>
+                            </article>
+
+                        </article>
+
+                    </section>
+
+                    <section class="contenedor-boton">
+                        <input class="input" type="submit"/>
+                    </section>
+
+                </form>
+            </section>
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------->
+
+            <footer class="footer">
+                <section class="contenedor-footer">
+
+                        <article class="contenedor-imagen">
+                            <img class="logo-png" src="/Candidato/Img/Logo-png.png"/>
+                        </article>
+
+                        <section class="informacion">
+
+                            <article class="sebas">
+                                <h3 class="titulo-sebas">Sebastian Triana</h3>
+                                <span>3214860900</span>
+
+                                <section class="apps">
+                                    <a href= "https://www.facebook.com/profile.php?id=100025316872756" target="-blank">
+                                        <i class="fa-brands fa-facebook"></i>
+                                    </a>
+                                    <a href= "https://web.whatsapp.com/" target="-blank">
+                                        <i class="fa-brands fa-whatsapp"></i>
+                                    </a>
+                                    <a href= "https://www.instagram.com/sebastian___1911/?hl=es-la" target="-blank">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                    <a href= "https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" target="-blank">
+                                        <i class="fa-solid fa-envelope"></i>
+                                    </a>
+                                </section>
+                            </article>
+
+                            <article class="william">
+                                <h3>William Lozano</h3>
+                                <span>3153504473</span>
+
+                                <section class="apps">
+                                    <a href= "https://www.facebook.com/profile.php?id=100025316872756" target="-blank">
+                                        <i class="fa-brands fa-facebook"></i>
+                                    </a>
+                                    <a href= "https://web.whatsapp.com/" target="-blank">
+                                        <i class="fa-brands fa-whatsapp"></i>
+                                    </a>
+                                    <a href= "https://www.instagram.com/sebastian___1911/?hl=es-la" target="-blank">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                    <a href= "https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" target="-blank">
+                                        <i class="fa-solid fa-envelope"></i>
+                                    </a>
+                                </section>
+                            </article>
+
+                            <article class="peter">
+                                    <h3>Peter Bustamante</h3>
+                                    <span>3044479143</span>
+
+                                    <section class="apps">
+                                        <a href= "https://www.facebook.com/profile.php?id=100025316872756" target="-blank">
+                                            <i class="fa-brands fa-facebook"></i>
+                                        </a>
+                                        <a href= "https://web.whatsapp.com/" target="-blank">
+                                            <i class="fa-brands fa-whatsapp"></i>
+                                        </a>
+                                        <a href= "https://www.instagram.com/sebastian___1911/?hl=es-la" target="-blank">
+                                            <i class="fa-brands fa-instagram"></i>
+                                        </a>
+                                        <a href= "https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" target="-blank">
+                                            <i class="fa-solid fa-envelope"></i>
+                                        </a>
+                                    </section>
+                                </article>
+
+                                    <article class="capera">
+                                        <h3>Diego Capera</h3>
+                                        <span>3005301839</span>
+
+                                        <section class="apps">
+                                            <a href= "https://www.facebook.com/profile.php?id=100025316872756" target="-blank">
+                                                <i class="fa-brands fa-facebook"></i>
+                                            </a>
+                                            <a href= "https://web.whatsapp.com/" target="-blank">
+                                                <i class="fa-brands fa-whatsapp"></i>
+                                            </a>
+                                            <a href= "https://www.instagram.com/sebastian___1911/?hl=es-la" target="-blank">
+                                                <i class="fa-brands fa-instagram"></i>
+                                            </a>
+                                            <a href= "https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" target="-blank">
+                                                <i class="fa-solid fa-envelope"></i>
+                                            </a>
+                                        </section>
+                                    </article>
+
+                        </section>
+                    </section>
+            </footer>
+
+    </main>
+</body>
+</html>

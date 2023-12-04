@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400&family=Montserrat&family=Poppins:wght@300&family=Tilt+Prism&display=swap');
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+.page {
+    display: grid;
+    height: 100%;
+    grid-template-rows: 10vh 75vh 15vh;
+    grid-template-areas: "header  " "content " "footer  ";
+}
+
+.header {
+    display: flex;
+    grid-area: header;
+    background-color: black;
+    color: white;
+    justify-content: space-between;
+    border-bottom: 3px solid white;
+    font-size: 23pt;
+    align-items: center;
+    padding-left: 25px;
+    font-weight: 1000;
+}
+
+.header .contenedor-logo {
+    display: flex;
+    gap: 2px
+}
+
+.header .contenedor-logo .s-amarilla {
+    color: #FFD966;
+}
+
+.header .titulo {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.header .titulo .system {
+    color: #FFD966;
+}
+
+
+/*------------------------------------------------------------*/
+
+.contenedor-content {
+    grid-area: content;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4%;
+}
+
+.contenedor-content .informacion-demanda {
+    width: 45%;
+    height: 30%;
+    background-color: white;
+    border-radius: 15px;
+    padding: 2%;
+    box-shadow: 0 0 10px white;
+    position: relative;
+    top: 4%
+}
+
+.contenedor-content .informacion-demanda:hover {
+    box-shadow: 0 0 25px white;
+    transition: 0.5s;
+}
+
+.contenedor-content .informacion-demanda .contenedor-titulo {
+    display: flex;
+    justify-content: center;
+    border-bottom: 3px solid black;
+    width: 100%;
+    height: 27%;
+    margin-bottom: 3%;
+}
+
+.contenedor-content .informacion-demanda .contenedor-titulo .titulo {
+    font-size: 17pt;
+}
+
+.contenedor-content .informacion-demanda .grid {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    gap: 5%;
+    justify-content: space-between;
+}
+
+.contenedor-content .informacion-demanda .grid .grid-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20%;
+}
+
+.contenedor-content .informacion-demanda .grid .grid-1 .contenedor-num-demanda {
+    display: flex;
+    width: 110%;
+    height: 20%;
+    gap: 3%
+}
+
+.contenedor-num-demanda .titulo {
+    font-size: 14pt;
+}
+
+.contenedor-num-demanda .valor {
+    display: flex;
+    height: 100%;
+    font-size: 13pt;
+    margin-top: 1%;
+}
+
+.contenedor-fecha {
+    display: flex;
+    width: 110%;
+    height: 20%;
+    gap: 3%
+}
+
+.contenedor-fecha .titulo {
+    font-size: 14pt;
+}
+
+.contenedor-fecha .valor {
+    display: flex;
+    height: 100%;
+    font-size: 13pt;
+}
+
+.contenedor-content .informacion-demanda .grid .grid-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20%;
+}
+
+.contenedor-content .informacion-demanda .grid .grid-2 .contenedor-nombre {
+    display: flex;
+    width: 110%;
+    height: 20%;
+    gap: 2%
+}
+
+.contenedor-nombre .titulo {
+    font-size: 14pt;
+}
+
+.contenedor-nombre .valor {
+    display: flex;
+    height: 100%;
+    font-size: 13pt;
+    margin-top: 0.5%;
+}
+
+.contenedor-content .informacion-demanda .grid .grid-2 .vacante-postulado {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    height: 20%;
+}
+
+.grid-2 .vacante-postulado .vacante {
+    display: flex;
+    gap: 7%;
+}
+
+.grid-2 .vacante-postulado .vacante .titulo {
+    font-size: 14pt;
+}
+
+.grid-2 .vacante-postulado .vacante .valor {
+    display: flex;
+    height: 100%;
+    font-size: 14pt;
+    margin-top: 1%;
+}
+
+.grid-2 .vacante-postulado .postulados {
+    display: flex;
+    gap: 7%;
+}
+
+.grid-2 .vacante-postulado .postulados .titulo {
+    font-size: 14pt;
+}
+
+.grid-2 .vacante-postulado .postulados .valor {
+    display: flex;
+    height: 100%;
+    font-size: 14pt;
+    margin-top: 1%;
+}
+
+
+/*------------------------------------------------------------*/
+
+.contenedor-content .informacion-persona {
+    width: 45%;
+    height: 30%;
+    background-color: white;
+    border-radius: 15px;
+    padding: 2%;
+    box-shadow: 0 0 10px white;
+    position: relative;
+    top: 4%
+} 
+
+.contenedor-content .informacion-persona:hover {
+    box-shadow: 0 0 25px white;
+    transition: 0.5s;
+}
+
+.contenedor-content .informacion-persona .contenedor-titulo {
+    display: flex;
+    justify-content: center;
+    border-bottom: 3px solid black;
+    width: 100%;
+    height: 27%;
+    margin-bottom: 3%;
+}
+
+.contenedor-content .informacion-persona .contenedor-titulo .titulo{
+    font-size: 17pt;
+}
+
+.contenedor-content .informacion-persona .grid {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    gap: 5%;
+    justify-content: space-between;
+}
+
+.contenedor-content .informacion-persona .grid .grid-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20%;
+}
+
+.contenedor-num-documento {
+    display: flex;
+    width: 110%;
+    height: 20%;
+    gap: 3%
+}
+
+.contenedor-num-documento .titulo {
+    font-size: 14pt;
+}
+
+.contenedor-num-documento .valor {
+    display: flex;
+    height: 100%;
+    font-size: 13pt;
+    margin-top: 1%;
+}
+
+.grid-1 .contenedor-fecha {
+    display: flex;
+    width: 110%;
+    height: 20%;
+    gap: 3%
+}
+
+.grid-1 .contenedor-fecha .titulo {
+    font-size: 14pt;
+}
+
+.grid-1 .contenedor-fecha .valor {
+    display: flex;
+    height: 100%;
+    font-size: 13pt;
+}
+
+.contenedor-content .informacion-persona .grid .grid-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20%;
+}
+
+.contenedor-content .informacion-persona .grid .grid-2 .contenedor-nombre {
+    display: flex;
+    width: 110%;
+    height: 20%;
+    gap: 2%
+}
+
+.grid-2 .contenedor-nombre .titulo {
+    font-size: 14pt;
+}
+
+.grid-2 .contenedor-nombre .valor {
+    display: flex;
+    height: 100%;
+    font-size: 13pt;
+    margin-top: 0.5%;
+}
+
+.contenedor-content .informacion-persona .grid .grid-2 .contenedor-activo {
+    display: flex;
+    width: 110%;
+    height: 20%;
+    gap: 2%
+}
+
+.grid-2 .contenedor-activo .titulo {
+    font-size: 14pt;
+}
+
+.grid-2 .contenedor-activo .valor {
+    display: flex;
+    height: 100%;
+    font-size: 13pt;
+    margin-top: 0.5%;
+}
+
+/*------------------------------------------------------------*/
+
+.contenedor-content .contenedor-boton {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    position: relative;
+    top: -8%;
+}
+
+.contenedor-content .contenedor-boton .postularme {
+    background-color: #FFD966;
+    padding: 0.7%;
+    border-radius: 10px;
+    border: none;
+    font-weight: bolder;
+    box-shadow: 0 0 10px #FFD966;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    right: -10%;
+}
+
+.contenedor-content .contenedor-boton .volver{
+    background-color: #FFD966;
+    padding: 0.7%;
+    border-radius: 10px;
+    border: none;
+    font-weight: bolder;
+    box-shadow: 0 0 10px #FFD966;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    left: -10%;
+}
+
+.contenedor-content .contenedor-boton .postularme:hover {
+    background-color: black;
+    color: #FFD966;
+    transition: 0.5s;
+}
+
+.contenedor-content .contenedor-boton .volver:hover {
+    background-color: black;
+    color: #FFD966;
+    transition: 0.5s;
+}
+
+/*------------------------------------------------------------*/
+
+.footer {
+    grid-area: footer;
+    background-color: #FFD966;
+    height: 100%;
+}
+
+.footer:hover {
+    box-shadow: 0 0 30px #FFD966;
+    transition: 0.5s;
+}
+
+.footer .contenedor-footer {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.footer .contenedor-footer .contenedor-imagen {
+    width: 15%;
+    margin-left: 15px;
+    height: 100%;
+}
+
+.footer .contenedor-footer .contenedor-imagen .logo-png {
+    width: 65%;
+    height: 95%;
+}
+
+.footer .contenedor-footer .informacion {
+    display: flex;
+    width: 85%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sebas,
+.william,
+.peter,
+.capera {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.footer .contenedor-footer .informacion article .apps {
+    display: flex;
+    text-decoration: none;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.footer .contenedor-footer .informacion article .apps i {
+    color: black;
+}
+
+.footer .contenedor-footer .informacion article .apps i:hover {
+    width: 100%;
+    height: 100%;
+    font-size: 18pt;
+    transition: 0.4s;
+}

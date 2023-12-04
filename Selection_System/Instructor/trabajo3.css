@@ -1,0 +1,112 @@
+body{
+    background-color: black;
+}
+
+header{
+    background-color:  (#FFD966);
+    text-align: center;
+    font-size: 35px;
+
+}
+
+h1{
+    background-color: #FFD966;
+}
+
+
+.flex{
+    display:grid;
+    grid-template-columns: 1fr 2fr 1fr ;
+    grid-template-rows: 200px 400px 140px ;
+    gap:16px;
+}
+
+.uno{
+    background-color: white;
+    grid-row: 1/3;
+    grid-column: 2/3;
+}
+
+.dos{
+    background-color: #ffd966;
+    grid-row: 3/4;
+    grid-column: 1/4;
+}
+
+form{
+    margin-left: 100px;
+    margin-top: 150px;
+    font-size: 30px;
+}
+.id{
+    width: 400px;
+    height: 25px;
+    border: 5px solid black;
+
+}
+
+.ap{
+    width: 400px;
+    height:25px;
+    border: 5px solid black;
+}
+
+.co{
+    width: 400px;
+    height:25px;
+    border: 5px solid black;
+}
+
+.rol{
+    width: 400px;
+    height:25px;
+    border: 5px solid black;
+}
+
+
+button {
+    background: black;
+    cursor: pointer;
+    border: none;
+    padding: 16px 32px;
+    color: azure;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    border-radius: 12px;
+    margin-left: 300px;
+    margin-top: 20px;
+}
+
+button:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, red, blue, deeppink, blue, red, blue, deeppink, blue);
+    background-size: 800%;
+    border-radius: 12px;
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.home1{
+    margin-top:70px;
+    margin-block-start: 2%;
+    margin-left:50px;
+ }
